@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meebo</title>
+  <meta name="description" content="Meebo is the AI platform for protein design. Run inference from any model (Boltz, RFdiffusion, ESM, AlphaFold) in one workspace, and turn predictions into decisions with built-in analytics.">
+  <meta property="og:title" content="Meebo · The AI platform for protein design">
+  <meta property="og:description" content="Run inference from any model in one workspace and turn predictions into decisions with built-in analytics. The AI platform for protein design.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400,0,0;0,9..144,500,0,0;0,9..144,600,0,0;1,9..144,400,0,0;1,9..144,500,0,0&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body id="top">
+
+<!-- ===== Masthead nav ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Meebo home">
+      <span class="mark">
+        <svg viewBox="0 0 533.159 533.159" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M529.826 141.065C525.383 136.622 518.719 136.622 514.276 141.065C483.175 172.166 430.97 179.941 368.768 164.391C352.107 102.189 360.993 51.0943 392.094 18.8827C396.537 14.4397 396.537 7.77522 392.094 3.33223C387.651 -1.11075 380.986 -1.11075 376.543 3.33223C342.11 38.8761 331.003 93.3027 345.442 157.726C326.56 153.283 309.898 152.172 293.237 152.172C244.364 152.172 205.488 169.944 179.941 202.156C153.283 236.589 146.619 287.683 158.837 345.442C93.3027 331.003 38.8761 342.11 4.44298 376.543C0 380.986 0 387.651 4.44298 392.094C8.88597 396.537 15.5504 396.537 19.9934 392.094C51.0944 360.993 103.299 353.217 165.501 368.768C182.162 430.97 173.277 482.064 142.176 514.276C137.733 518.719 137.733 525.383 142.176 529.826C144.397 532.048 146.619 533.158 149.951 533.158C153.283 533.158 155.505 532.048 157.726 529.826C192.159 494.282 203.267 439.856 188.827 375.432C207.71 379.875 224.371 380.986 241.032 380.986C289.905 380.986 328.781 363.214 354.328 331.003C380.986 296.569 387.651 245.475 375.432 187.716C394.315 192.159 412.087 194.381 428.748 194.381C470.957 194.381 505.39 182.162 530.937 156.615C534.269 153.283 534.269 145.508 529.826 141.065ZM336.556 317.674C316.563 344.332 283.24 358.771 241.032 358.771C223.26 358.771 203.267 356.55 182.162 350.996C167.723 295.459 173.277 246.586 196.602 215.485C216.596 188.827 249.918 174.387 292.126 174.387C309.898 174.387 329.892 176.609 350.996 182.162C365.436 237.7 359.882 286.573 336.556 317.674Z" fill="#1d6e83"/>
+          <path d="M390.983 57.7588L475.4 142.176C477.621 144.397 480.953 145.508 483.175 145.508C486.507 145.508 488.729 144.397 490.95 142.176C495.393 137.733 495.393 131.068 490.95 126.625L406.533 42.2084C402.09 37.7654 395.426 37.7654 390.983 42.2084C387.651 46.6514 387.651 53.3158 390.983 57.7588Z" fill="#a23457"/>
+          <path d="M374.322 85.5275C369.879 89.9705 369.879 96.635 374.322 101.078L432.081 158.837C434.302 161.058 437.634 162.169 439.856 162.169C443.188 162.169 445.41 161.058 447.631 158.837C452.074 154.394 452.074 147.729 447.631 143.286L389.872 85.5275C385.429 81.0845 378.765 81.0845 374.322 85.5275Z" fill="#9a7b27"/>
+          <path d="M142.176 474.289L57.7588 389.872C53.3158 385.429 46.6514 385.429 42.2084 389.872C37.7654 394.315 37.7654 400.98 42.2084 405.423L126.625 489.839C128.847 492.061 132.179 493.172 134.4 493.172C136.622 493.172 139.954 492.061 142.176 489.839C146.619 486.507 146.619 478.732 142.176 474.289Z" fill="#1d6e83"/>
+          <path d="M151.062 449.852C154.394 449.852 156.615 448.742 158.837 446.52C163.28 442.077 163.28 435.413 158.837 430.97L101.078 373.211C96.635 368.768 89.9705 368.768 85.5275 373.211C81.0845 377.654 81.0845 384.318 85.5275 388.761L143.286 446.52C145.508 448.742 148.84 449.852 151.062 449.852Z" fill="#9a7b27"/>
+          <path d="M232.146 216.596C227.703 212.153 221.039 212.153 216.596 216.596C212.153 221.039 212.153 227.703 216.596 232.146L301.012 316.563C303.234 318.784 306.566 319.895 308.788 319.895C312.12 319.895 314.341 318.784 316.563 316.563C321.006 312.12 321.006 305.455 316.563 301.012L232.146 216.596Z" fill="#9a7b27"/>
+          <path d="M209.931 265.469C205.488 261.026 198.824 261.026 194.381 265.469C189.938 269.911 189.938 276.576 194.381 281.019L252.14 338.778C254.361 340.999 257.693 342.11 259.915 342.11C263.247 342.11 265.468 340.999 267.69 338.778C272.133 334.335 272.133 327.67 267.69 323.227L209.931 265.469Z" fill="#1d6e83"/>
+          <path d="M281.019 194.381C276.576 189.938 269.911 189.938 265.469 194.381C261.026 198.824 261.026 205.488 265.469 209.931L323.227 267.69C325.449 269.911 328.781 271.022 331.003 271.022C333.224 271.022 336.556 269.911 338.778 267.69C343.221 263.247 343.221 256.583 338.778 252.14L281.019 194.381Z" fill="#a23457"/>
+        </svg>
+      </span>
+      <span class="word">Mee<b>bo</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#platform">Platform</a>
+      <a href="#product">Product</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#why">Why</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>The AI platform for <em>protein design.</em></h1>
+        <p class="lede">
+          Generative AI is revolutionizing protein design, and it runs on data. Meebo is how you
+          generate it: bring sequences from any model, run inference and analytics in the browser.
+        </p>
+        <div class="rule"></div>
+
+        <div class="access" id="request">
+          <form id="waitlist-form-hero" data-list="product">
+            <div class="field">
+              <label for="email-hero">Request early access</label>
+              <input id="email-hero" type="email" name="email" placeholder="you@lab.org" autocomplete="email" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Join the waitlist</button>
+          </form>
+          <div class="ok">✓ Logged. You're on the early-access list. We'll be in touch as berths open.</div>
+          <p class="note">For protein engineers, computational biologists, and the labs around them.</p>
+        </div>
+
+        <div class="marks">
+          <span><i class="ico" data-ico="cpu"></i> Run any model, at scale</span>
+          <span><i class="ico" data-ico="dataflow"></i> Analytics that turn predictions into decisions</span>
+        </div>
+      </div>
+
+      <figure class="plate-fig">
+        <img src="svgs/mantaray-coral.svg" alt="Manta ray and coral, a Meebo specimen plate">
+        <figcaption class="cap">
+          <span><em>Fig. 1</em> · Manta ray over coral</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Platform ===== -->
+  <section id="platform">
+    <div class="wrap band">
+      <div class="sec-head">
+        <div class="h">
+          <span class="sec-no">§ 01 · The Platform</span>
+          <h2>From AI-designed sequence to <em>a clear decision</em></h2>
+        </div>
+        <p class="blurb">Design and refine in the browser, run inference from any model, and let AI
+          analytics turn the results into your next move.</p>
+      </div>
+
+      <div class="plates">
+        <div class="plate">
+          <span class="fig">FIG. 01</span>
+          <div class="ico-box"><i class="ico" data-ico="cpu"></i></div>
+          <h3>Run any model</h3>
+          <p>Boltz, RFdiffusion, ESM, AlphaFold, or your own. Run inference on autoscaling GPUs to
+            predict structure, properties, and binding, and triage thousands of candidates fast.</p>
+        </div>
+        <div class="plate">
+          <span class="fig">FIG. 02</span>
+          <div class="ico-box"><i class="ico" data-ico="dna"></i></div>
+          <h3>One workspace</h3>
+          <p>Organize molecules, targets, and behaviors. Every prediction carries its model, version,
+            and full provenance, so you can compare runs side by side and trust what you see.</p>
+        </div>
+        <div class="plate">
+          <span class="fig">FIG. 03</span>
+          <div class="ico-box"><i class="ico" data-ico="dataflow"></i></div>
+          <h3>Analytics that decide</h3>
+          <p>AI analytics rank designs, flag the winners, and surface the next variants worth
+            pursuing, turning a pile of predictions into a short list you can act on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Product ===== -->
+  <section id="product">
+    <div class="wrap band">
+      <div class="sec-head">
+        <div class="h">
+          <span class="sec-no">§ 02 · The Product</span>
+          <h2>Your designs and your data, in <em>one workspace</em></h2>
+        </div>
+        <p class="blurb">Data in, answers out. Order any computation in the browser, then watch
+          results flow back into a live workspace. Every molecule, prediction, and the model behind
+          it stays fully traceable.</p>
+      </div>
+      <div class="shots" style="grid-template-columns:1fr;max-width:880px;margin:0 auto">
+        <figure class="shot">
+          <span class="fig">FIG. 04 · Order builder</span>
+          <div class="frame"><img src="images/product-order.png" alt="Meebo order builder: choosing what to predict, how to run it, the input sequence, and which models to use" loading="lazy"></div>
+          <h3>Order any computation</h3>
+          <p>Pick what you want to know: predict structure, contact maps, find similar structures,
+            design a binder, dock a ligand. Choose models (ESM-2, AlphaFold, Boltz, your own), set
+            priority, and run on GPU.</p>
+        </figure>
+      </div>
+
+      <!-- Pricing -->
+      <div id="pricing" class="pricing-head">
+        <span class="sec-no">§ 02a · Pricing</span>
+        <h3>Pay for what you <em>run</em></h3>
+        <p>Inference is metered by compute. Analytics is a flat subscription. Bring your own models
+          or use ours.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="price">
+          <div class="pname">Inference</div>
+          <div class="amt">Usage <small>/ GPU-hour</small></div>
+          <p class="desc">Run any model on autoscaling GPUs. Pay only for compute you use.</p>
+          <ul>
+            <li>Boltz, RFdiffusion, ESM-2, AlphaFold, your own</li>
+            <li>Structure, properties, predicted binding</li>
+            <li>Autoscaling, no idle cost</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="pname">Analytics</div>
+          <div class="amt">Custom <small>/ month</small></div>
+          <p class="desc">Always-on AI analytics across your whole program.</p>
+          <ul>
+            <li>Automated ranking and hit-calling on every run</li>
+            <li>Suggested variants, ranked by predicted gain</li>
+            <li>Trends, comparisons, and alerts across campaigns</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="pname">Enterprise</div>
+          <div class="amt">Custom</div>
+          <p class="desc">For teams that need more control and scale.</p>
+          <ul>
+            <li>Private and fine-tuned models</li>
+            <li>SSO, audit logs, and role-based access</li>
+            <li>Dedicated support and infrastructure</li>
+          </ul>
+        </div>
+      </div>
+      <p class="price-note">Volume pricing for design groups. Annual plans available. Talk to us
+        about pilots.</p>
+    </div>
+  </section>
+
+  <!-- ===== Method ===== -->
+  <section id="method">
+    <div class="wrap band">
+      <div class="sec-head">
+        <div class="h">
+          <span class="sec-no">§ 03 · Method</span>
+          <h2>Close the <em>design, predict, decide</em> loop</h2>
+        </div>
+        <p class="blurb">Every design round compounds when inference and analytics feed the next.
+          Meebo runs the whole turn, and remembers every revolution.</p>
+      </div>
+
+      <div class="method-grid">
+        <div class="steps">
+          <div class="step"><span class="n"></span><div><h3>Design</h3><p>Bring designs or explore sequence space, then submit candidates and order a run right in the browser.</p></div></div>
+          <div class="step"><span class="n"></span><div><h3>Predict</h3><p>Run inference across models for structure, properties, and predicted binding on autoscaling GPUs.</p></div></div>
+          <div class="step"><span class="n"></span><div><h3>Analyze</h3><p>AI analytics rank designs, flag the winners, and screen out low-potential candidates.</p></div></div>
+          <div class="step"><span class="n"></span><div><h3>Iterate</h3><p>Feed insight and suggested variants into your next round of design, with full provenance kept.</p></div></div>
+        </div>
+
+        <div class="compass" aria-hidden="true">
+          <span class="disc"></span>
+          <span class="disc d2"></span>
+          <div class="node t"><span class="pt"></span><span class="nm">Design</span></div>
+          <div class="node r"><span class="pt"></span><span class="nm">Predict</span></div>
+          <div class="node b"><span class="pt"></span><span class="nm">Analyze</span></div>
+          <div class="node l"><span class="pt"></span><span class="nm">Iterate</span></div>
+          <div class="hub"><div><i class="ico" data-ico="loop"></i><div class="lbl">The loop</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why ===== -->
+  <section id="why">
+    <div class="wrap band">
+      <div class="sec-head">
+        <div class="h">
+          <span class="sec-no">§ 04 · Why Meebo</span>
+          <h2>Predictions are cheap. <em>Decisions are hard.</em></h2>
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why">
+          <p>AI protein design is breaking open: generative models propose binders, enzymes, and
+            therapeutics by the thousand. Every candidate needs structure prediction, property
+            inference, and ranking before you know what to pursue.</p>
+          <p>But that inference lives in scattered notebooks, scripts, and clusters. Runs are hard to
+            compare, provenance gets lost, and the analytics that should turn predictions into
+            decisions never get built.</p>
+          <p>Meebo brings it together: run any model in one workspace, scale inference on demand, and
+            layer analytics on top, so you can rank designs and act in minutes, not weeks.</p>
+          <p>And it compounds. Every run is captured, every comparison is reusable, and your analytics
+            get sharper as your program grows.</p>
+        </div>
+        <div>
+          <div class="pullquote"><q>Inference is only an answer when you can act on it.</q></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Team ===== -->
+  <section id="team">
+    <div class="wrap band">
+      <div class="sec-head" style="justify-content:center;text-align:center">
+        <div class="h" style="margin:0 auto">
+          <span class="sec-no">The Crew</span>
+          <h2>First-rate science, <em>ironclad engineering</em></h2>
+          <p class="blurb" style="margin-left:auto;margin-right:auto">Built by people who ship at the edge of science and software.</p>
+        </div>
+      </div>
+
+      <div class="crew">
+        <a class="member" href="https://www.linkedin.com/in/dzorine/" target="_blank" rel="noopener noreferrer">
+          <img class="ph" src="images/dmitri.png" alt="Dmitri Zorine">
+          <div class="nm">Dmitri Zorine, PhD</div>
+          <div class="role">CEO · Protein Designer</div>
+          <div class="bg">
+            <p>Design-platform architect and first hire at Zip Bio. Ideation to IND-enabling design in 10 months.</p>
+            <p>PhD, Baker Lab at the UW Institute for Protein Design.</p>
+          </div>
+          <div class="li">LinkedIn ↗</div>
+        </a>
+        <a class="member" href="https://www.linkedin.com/in/lukemillerrobotics/" target="_blank" rel="noopener noreferrer">
+          <img class="ph" src="images/luke.png" alt="Luke Miller">
+          <div class="nm">Luke Miller</div>
+          <div class="role">CTO · Computer Engineer</div>
+          <div class="bg">
+            <p>Hardware-in-the-loop for 10× faster satellite testing at SpaceX / Starlink</p>
+            <p>Automated aircraft-failure recovery, 6× response, at Reliable Robotics</p>
+          </div>
+          <div class="li">LinkedIn ↗</div>
+        </a>
+      </div>
+      <p class="blurb" style="text-align:center;margin:30px auto 0">We're hiring across ML
+        infrastructure, protein modeling, and product engineering.</p>
+    </div>
+  </section>
+
+  <!-- ===== Learn (the trailer) ===== -->
+  <section class="learn" id="learn" style="padding-bottom:76px">
+    <div class="wrap">
+      <div class="learn-grid">
+        <div>
+          <h2>Meebo <em>Learn</em></h2>
+          <p class="blurb">Two skills are suddenly essential and almost nobody teaches both: how to
+            design proteins, and how the AI behind modern biology actually works. Meebo Learn is a
+            hands-on field guide to both, taught together. For students, scientists, and the next
+            generation of protein engineers.</p>
+
+          <div class="toc">
+            <div class="toc-row">
+              <span class="rn">I</span>
+              <div class="body"><h3>Proteins, plainly</h3><p>Sequence, structure, and function: the language designs are written in.</p></div>
+              <span class="pg">Protein design</span>
+            </div>
+            <div class="toc-row">
+              <span class="rn">II</span>
+              <div class="body"><h3>How AI learned biology</h3><p>Structure predictors, language models, and generative design, in plain terms.</p></div>
+              <span class="pg">Learn AI</span>
+            </div>
+            <div class="toc-row">
+              <span class="rn">III</span>
+              <div class="body"><h3>Design tools, hands-on</h3><p>Drive real models and design tools step by step. No PhD required to begin.</p></div>
+              <span class="pg">Protein design</span>
+            </div>
+            <div class="toc-row">
+              <span class="rn">IV</span>
+              <div class="body"><h3>Inference to insight</h3><p>Run inference, read the analytics, and turn predictions into decisions.</p></div>
+              <span class="pg">Learn AI</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="subcard">
+          <h3>Be first to hear</h3>
+          <p>Meebo Learn is in development. Leave your address and we'll send word the day it ships.</p>
+          <div class="access" style="margin-top:22px">
+            <form id="waitlist-form-learn" data-list="learn">
+              <div class="field">
+                <label for="email-learn">Your address</label>
+                <input id="email-learn" type="email" name="email" placeholder="you@school.edu" autocomplete="email" required>
+              </div>
+              <button class="btn btn-primary" type="submit">Notify me</button>
+            </form>
+            <div class="ok">✓ Noted. You're on the Learn subscriber list.</div>
+            <p class="note">Educators and programs: mention it in your reply and we'll set up cohort access.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <div class="wrap band">
+      <div class="sec-head">
+        <div class="h">
+          <span class="sec-no">§ 05 · Get Started</span>
+          <h2>Request early <em>access</em></h2>
+        </div>
+        <p class="blurb">Tell us about your workflow and we'll show you how Meebo can accelerate
+          your designs. We read every message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-meta">
+          <p><span class="lab">Meebo</span> AI inference and analytics for protein design. Reach us
+            any time at <a href="mailto:hello@diff.bio">hello@diff.bio</a>.</p>
+          <p><span class="lab">Early access</span> We're onboarding teams in small cohorts. The form
+            is the fastest way in.</p>
+          <p><span class="lab">Elsewhere</span>
+            <a href="https://www.linkedin.com/in/dzorine/" target="_blank" rel="noopener noreferrer">Dmitri (CEO)</a> &nbsp;·&nbsp;
+            <a href="https://www.linkedin.com/in/lukemillerrobotics/" target="_blank" rel="noopener noreferrer">Luke (CTO)</a>
+          </p>
+        </div>
+
+        <div class="contact-card" id="contact-card">
+          <form class="cform" id="contact-form" action="https://formspree.io/f/mnjbdpob" method="POST">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="row">
+              <div class="cfield"><label for="c-name">Name</label><input id="c-name" type="text" name="name" placeholder="Your name" required></div>
+              <div class="cfield"><label for="c-email">Email</label><input id="c-email" type="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
+            </div>
+            <div class="cfield"><label for="c-company">Company <span style="text-transform:none">(optional)</span></label><input id="c-company" type="text" name="company" placeholder="Your company"></div>
+            <div class="cfield"><label for="c-msg">About your workflow <span style="text-transform:none">(optional)</span></label><textarea id="c-msg" name="message" rows="3" placeholder="What are you designing, and what would you run first?"></textarea></div>
+            <button class="btn btn-primary btn-lg" type="submit">Request access</button>
+          </form>
+          <div class="ok">✓ Thanks for your interest. We'll be in touch soon.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Colophon ===== -->
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="word">Meebo</div>
+      <div style="margin-top:8px">Automation that makes life (science) better.</div>
+      <div style="margin-top:6px">© <span id="year">2026</span> Meebo</div>
+    </div>
+    <div class="col-r">
+      <div><a href="#platform">Platform</a> &nbsp;·&nbsp; <a href="#product">Product</a> &nbsp;·&nbsp; <a href="#pricing">Pricing</a> &nbsp;·&nbsp; <a href="#team">Team</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></div>
+      <div><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="mailto:hello@diff.bio">hello@diff.bio</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Tint silhouette icons to currentColor via CSS mask.
+  document.querySelectorAll('[data-ico]').forEach(function (el) {
+    var url = "url('svgs/" + el.dataset.ico + ".svg')";
+    el.style.webkitMaskImage = url;
+    el.style.maskImage = url;
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Waitlist capture. Set window.MEEBO_WAITLIST_ENDPOINT (or wire a /api/waitlist route)
+  // to POST {email, list}. Until then it stores locally and shows success so the page is
+  // fully functional for demos and grant reviews.
+  var ENDPOINT = window.MEEBO_WAITLIST_ENDPOINT || null;
+
+  document.querySelectorAll('form[id^="waitlist-form"]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = form.querySelector('input[name="email"]');
+      var email = input.value.trim();
+      if (!email) return;
+      var list = form.dataset.list || 'product';
+
+      try {
+        var key = 'meebo_waitlist';
+        var all = JSON.parse(localStorage.getItem(key) || '[]');
+        all.push({ email: email, list: list, at: new Date().toISOString() });
+        localStorage.setItem(key, JSON.stringify(all));
+      } catch (_) {}
+
+      var done = function () { form.closest('.access').classList.add('done'); };
+      if (ENDPOINT) {
+        fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ email: email, list: list })
+        }).then(done).catch(done);
+      } else { done(); }
+    });
+  });
+
+  // Contact form: submits to Formspree via fetch, shows success in place.
+  var cform = document.getElementById('contact-form');
+  if (cform) {
+    cform.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var card = document.getElementById('contact-card');
+      fetch(cform.action, {
+        method: 'POST',
+        body: new FormData(cform),
+        headers: { Accept: 'application/json' }
+      }).then(function () { card.classList.add('done'); })
+        .catch(function () { card.classList.add('done'); });
+    });
+  }
+</script>
+</body>
+</html>
